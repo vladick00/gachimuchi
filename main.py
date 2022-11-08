@@ -13,3 +13,12 @@ for i in range(len(sides)):
                 if s > smax:
                     smax = s
 print("Максимальная площадь треугольника", smax)
+
+def equation(a, b, c): 
+    D = b**2 - 4*a*c
+    x1 = (-b - D**0.5) / 2*a
+    x2 = (-b + D**0.5) / 2*a
+    return x1, x2
+
+#Пример:
+print('Корни : ', equation(1, 4, 4))
